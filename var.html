@@ -17,5 +17,14 @@
       &lt;var&gt;l&lt;/var&gt;.</code
     >
     <p>The area of the square is <var>l</var> * <var>l</var>.</p>
+    <h2>Try it out</h2>
+    <input
+      id="input-expression"
+      type="text"
+      oninput="(function() {
+      document.getElementById('output').innerHTML = `<var>${document.getElementById('input-expression').value}</var>`;
+    })()"
+    />
+    <p id="output"><var>Put variables here</var></p>
   </body>
 </html>
