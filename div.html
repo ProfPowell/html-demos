@@ -7,14 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
         div { background-color: yellow; }
+        #redDiv { background-color: red; }
+        .has-text-purple { color: purple; }
     </style>
 </head>
 
 <body>
     <h1>HTML div Examples</h1>
-    <div><p>This is a div!</p></div>
+    <div id="redDiv"><p>This is a div with a red background using id styling!</p></div>
     <div><p>The div tag is a block level tag (be careful not to confuse it with the inline <span style="color:red">span</span> tag!)</p></div>
-    <div style="color:purple"><p>We can use divs as a container for other html tags so styling can be applied to the container</p></div>
+    <div class="has-text-purple">
+        <h1>This div has purple text using class styling</h1>
+        <p>We can use divs as a container for other html tags so styling can be applied to the container</p>
+    </div>
 </body>
 
 </html>
