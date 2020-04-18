@@ -6,69 +6,70 @@
         <title>input tag demo</title>
     </head>
     <body>
-        <label for="hidden-demo">an input with <code>type="hidden"</code> cannot be viewed or edited by a user: </label>
+        <label>an input with <code>type="hidden"</code> cannot be viewed or edited by a user: </label>
         <input type="hidden" id="hidden-demo"><br/><br/>
 
-        <label for="text-demo">an input with <code>type="text"</code> will accept any plaintext and will edit the element's <code>value</code>:</label>
+        <label for="text-demo">an input with <code>type="text"</code> will accept any plaintext except line feed or carriage returns and will edit the element's <code>value</code>:</label>
         <input type="text" id="text-demo"><br/><br/>
         
-        <label for="text-demo">an input with <code>type="search"</code> will accept any plaintext and will edit the element's <code>value</code>:</label>
-        <input type="search"><br/><br/>
+        <label for="search-demo">an input with <code>type="search"</code> will accept any plaintext except line feed or carriage returns and will edit the element's <code>value</code>:</label>
+        <input type="search" id="search-demo"><br/><br/>
         
-        <label for="tel-demo">an input with <code>type="tel"</code> will :</label>
+        <label for="tel-demo">an input with <code>type="tel"</code> will accept any plaintext except line feed or carriage returns and will edit the element's <code>value</code>:</label>
         <input type="tel" id="tel-demo"><br/><br/>
         
-        <label for="url-demo">an input with <code>type="url"</code> will :</label>
-        <input type="url"><br/><br/>
+        <label for="url-demo">an input with <code>type="url"</code> will edit a single absolute URL and will edit the element's <code>value</code>:</label>
+        <input type="url" id="url-demo"><br/><br/>
         
-        <label for="email-demo">an input with <code>type="email"</code> will :</label>
-        <input type="email"><br/><br/>
+        <label for="email-demo">an input with <code>type="email"</code> will accept a single valid email address (or multiple addresses if the <code>multiple</code> attribute is specified):</label>
+        <input type="email" id="email-demo"><br/><br/>
         
-        <label for="password-demo">an input with <code>type="password"</code> will :</label>
-        <input type="password"><br/><br/>
+        <label for="password-demo">an input with <code>type="password"</code> will accept any plaintext except line feed or carriage returns and will edit the element's <code>value</code>. Input should be obscured and not echoed:</label>
+        <input type="password" id="password-demo"><br/><br/>
         
-        <label for="date-demo">an input with <code>type="date"</code> will :</label>
+        <label for="date-demo">an input with <code>type="date"</code> will accept a valid date string, sometimes accompanied by a browser implemented date picker:</label>
         <input type="date" id="date-demo"><br/><br/>
         
-        <label for="month-demo">an input with <code>type="month"</code> will :</label>
+        <label for="month-demo">an input with <code>type="month"</code> will allow a user to select a valid 'month' string and input a valid year value:</label>
         <input type="month" id="month-demo"><br/><br/>
         
-        <label for="week-demo">an input with <code>type="week"</code> will :</label>
+        <label for="week-demo">an input with <code>type="week"</code> will accept a week value (1-52) and numerical year value:</label>
         <input type="week" id="week-demo"><br/><br/>
         
-        <label for="time-demo">an input with <code>type="time"</code> will :</label>
+        <label for="time-demo">an input with <code>type="time"</code> will accept a valid time string:</label>
         <input type="time" id="time-demo"><br/><br/>
         
-        <label for="datetime-local-demo">an input with <code>type="datetime-local"</code> will :</label>
+        <label for="datetime-local-demo">an input with <code>type="datetime-local"</code> will accept a valid time string with no offset information for time zones:</label>
         <input type="datetime-local" id="datetime-local-demo"><br/><br/>
         
-        <label for="number-demo">an input with <code>type="number"</code> will :</label>
+        <label for="number-demo">an input with <code>type="number"</code> will accept a valid floating point number (digits 0-9, <kbd>.</kbd> and <kbd>e</kbd>):</label>
         <input type="number" id="number-demo"><br/><br/>
         
-        <label for="range-demo">an input with <code>type="range"</code> will :</label>
+        <label for="range-demo">an input with <code>type="range"</code> represents a control to set the element's <code>value</code> to a numerical value within a range set by the element's <code>minimum</code> and <code>maximum</code> values:</label>
         <input type="range" id="range-demo"><br/><br/>
         
-        <label for="color-demo">an input with <code>type="color"</code> will :</label>
+        <label for="color-demo">an input with <code>type="color"</code> represents a color well control, for setting the element's <code>value</code> to a string representing a simple color:</label>
         <input type="color" id="color-demo"><br/><br/>
         
-        <label for="checkbox-demo">an input with <code>type="checkbox"</code> will :</label>
+        <label for="checkbox-demo">an input with <code>type="checkbox"</code> represents a two-state control that represents the element's <code>checkedness</code> state:</label>
         <input type="checkbox" id="checkbox-demo"><br/><br/>
         
-        <label for="radio-demo">an input with <code>type="radio"</code> will :</label>
+        <label for="radio-demo">an input with <code>type="radio"</code> represents a control that, when used in conjunction with other <code>input</code> elements, forms a radio button group in which only one control can have its <code>checkedness</code> state set to true:</label>
         <input type="radio" id="radio-demo"><br/><br/>
         
-        <label for="file-demo">an input with <code>type="file"</code> will :</label>
+        <label for="file-demo">an input with <code>type="file"</code> allows a user to attach a file to the element, each file consisting of a file name, a file type, and a file body:</label>
         <input type="file" id="file-demo"><br/><br/>
         
-        <label for="submit-demo">an input with <code>type="submit"</code> will :</label>
+        <label for="submit-demo">an input with <code>type="submit"</code> represents a button that, when activated, submits the form:</label>
         <input type="submit" id="submit-demo"><br/><br/>
         
-        <label for="image-demo">an input with <code>type="image"</code> will :</label>
-        <input type="image" id="image-demo"><br/><br/>
+        <label for="image-demo">an input with <code>type="image"</code> represents an image from which a user can submit the form. The image is given by the <code>src</code> attribute:</label>
+        <input type="image" id="image-demo" src="./powell.jpeg" alt="submit using powell" style="width: 25px; height: 25px;"><br/><br/>
         
-        <label for="reset-demo">an input with <code>type="reset"</code> will :</label>
+        <label for="reset-demo">an input with <code>type="reset"</code> represents a button that, when activated, resets all form values to default:</label>
         <input type="reset" id="reset-demo"><br/><br/>
         
-        <input type="button">
+        <label for="button-demo">an input with <code>type="button"</code> represents a button with no default behavior. A label for the button must be provided in the <code>value</code> attribute:</label>
+        <input type="button" id="button-demo" value="Press Me!">
     </body>
 </html>
