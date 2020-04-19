@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>map demo</title>
+  <script>
+    function firealert() {
+      alert("This is an alert");
+    }
+  </script>
+</head>
+<body>
+  <img src="http://static1.squarespace.com/static/5603025ee4b0ad0093a065d0/56045616e4b0fd89fe37e1d0/56045866e4b0fd89fe386699/1443125350653/dsc_0416-499x334.jpg?format=original" alt="chickens in a coop" usemap="#chickenmap">
+  <map name="chickenmap">
+      <area shape="rect" coords="253,163,315,251" alt="Chicken Wikipedia" href="https://en.wikipedia.org/wiki/Chicken" target="_blank">
+      <area shape="rect" coords="313,28,361,89" alt="feeder" href="https://www.youtube.com/watch?v=TXRSjkWmHAs" target="_blank" onclick="firealert()">
+  </map>
+</body>
+</html>
