@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>img: HTML Tag Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <h1>HTML img element</h1>
+
+    <p>The image tag displays an image. It requires a src attribute to provide the resource image and an alt attribute
+        that describes the image.</p>
+    <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Dog">
+
+    <p>It will display the alt attribute's value if the image cannot be loaded.</p>
+    <img src="dog_wrong_name.jpg" alt="Dog">
+
+    <p>Images can be animated.</p>
+    <img src="https://cdn.dribbble.com/users/1201194/screenshots/7197395/media/d5d300c76b56aa290f34cfc39de99c2d.gif" alt="Dog">
+
+    <p>Images can lead to a link. (Click the below image)</p>
+    <a href="https://www.google.com/">
+        <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=614" alt="Dog">
+    </a>
+
+    <p>You can specify the srcset attribute to load different images depending on the dimensions of the browser.
+        This is useful when you want to switch the resolution of an image based on the size of a browser. Try resizing
+        your browser and see how the below image changes.</p>
+    <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1"
+         srcset="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=302 302w,
+         https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=714 714w,
+         https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1 5184w"
+         sizes="(max-width: 500px) 300px,(max-width: 900px) 700px, 100vw"
+         alt="Dog">
+
+    <p>Note: sizes is evaluated in order, so conditions should be ordered from most-to-least specific.
+        i.e., the following does not work properly.</p>
+    <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1"
+         srcset="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=302 302w,
+         https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=714 714w,
+         https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1 5184w"
+         sizes="(max-width: 900px) 700px, (max-width: 500px) 300px, 100vw"
+         alt="Dog">
+
+    <p>Alternatively, you can implement resolution switching based off of the display's pixel density using the 'x' descriptor.</p>
+    <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1"
+         srcset="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=302 1x,
+         https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=714 2x"
+         alt="Dog">
+
+</body>
+
+</html>

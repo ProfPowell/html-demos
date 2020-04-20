@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>source: HTML Tag Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <h1>HTML source element</h1>
+
+    <p>The source tag is used to specify multiple resources for a media (i.e., a picture, video, or audio tag)</p>
+    <p>The source tag's required attributes and usage depends on the type of its parent container</p>
+
+    <h2>source tag within a picture tag</h2>
+    <p>When used within a picture tag, the srcset attribute is required. The media attribute can be used to specify the conditions for which a source should be used</p>
+    <picture>
+        <source media="(min-width: 800px)"
+                srcset="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=300 1x,
+                https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=700 2x">
+        <source srcset="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=324&h=500&fit=crop">
+        <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1500" alt="Dogs">
+    </picture>
+
+    <h2>source tag within an audio/video tag</h2>
+    <p>When used within an audio/video tag, the src attribute is required. If the type attribute is specified, the
+        browser will use the first source with a supported type</p>
+
+    <video controls autoplay>
+        <source src="https://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+        <source src="https://file-examples.com/wp-content/uploads/2018/04/file_example_MOV_480_700kB.mov" type="video/mov">
+    </video>
+
+
+</body>
+
+</html>
