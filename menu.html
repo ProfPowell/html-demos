@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>menu demo</title>
+</head>
+<body>
+  <menu>
+    <li><button onclick="openFile()">Open File</button></li>
+    <li><button onclick="saveFile()">Save File</button></li>
+  </menu>
+  <button menu="popup">
+    Click to open menu.
+  </button>
+  <menu id="popup" type="contextmenu">
+    <menuitem><a href="#">Click me!</a></menuitem>
+    <menuitem>Click me too!</menuitem>
+    <menuitem>Click me as well!</menuitem>
+    <menuitem>Another click</menuitem>
+  </menu>
+</body>
+</html>
