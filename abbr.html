@@ -9,20 +9,44 @@
 
 <body>
     <h1>HTML Abbreviation (abbr) Examples</h1>
+    <h4 style="color: red;">
+        <b>
+            Note: The 'acronym' tag also allows authors to clearly indicate a sequence of characters
+            that compose an acronym or abbreviation for a word, but the feature is obsolete since 
+            it is not supported in HTML5. Try to avoid using it.
+        </b>
+    </h2>
 
-    <h4>Using Abbreviation and the 'title' Attribute for Providing the Definition</h4>
+    <h4>Using Abbreviation and the 'title' attribute for words who should be prounced as letter-by-letter.</h4>
     <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    
+    <h4>Using Abbreviation with the 'title' for expansion of a word</h4>
+    <abbr title="et cetera">etc.</abbr>
+    
+    <h4>Using Abbreviation with teh 'title' for when something is spoken differently from written</h4>
+    <p>$60<abbr title="per month">/mo</abbr></p>
 
-    <h4>Using Abbreviation with the 'title' and 'dfn' Attributes for Providing the Definition</h4>
+    <h4>Using Abbreviation and the 'title' attribute for expansion of a phrase and words who should be prounced as letter-by-letter.</h4>
+    <p>Price <abbr title="does not equal">!=</abbr> <abbr title="total cost of ownership">TCO</abbr></p>
+
+    <h4>Using Abbreviation with the 'title' attribute and 'dfn' tag for Providing the Definition</h4>
     <p>
-        <dfn id="html"><abbr title="HyperText Markup Language">HTML</abbr></dfn>
-        is a markup language used to create the semantics and structureof a web page.
+        I made some <dfn title="American Standard Code for Information Interchange"><abbr>ASCII</abbr></dfn> art.
+    </p>
+    <p> A <dfn id="spec">Specification</dfn>
+        (<abbr title="Specification">spec</abbr>) is a document that outlines
+        in detail how a technology or API is intended to function and how it is
+        accessed.
     </p>
 
-    <h4>Marking up an Abbreviation Semantically</h4>
+    <h4>Using Abbreviation without the 'title' attribute for words who should be prounced as written.</h4>
+    <h5>(To indicate to users and screen readers that the initialism should be pronounced rather than spelt out)</h5>
+    <p><abbr>NASA</abbr> launched a spaceship.</p>
+    <p>JavaScript Object Notation (<abbr>JSON</abbr>)</p>
+
+    <h4>Bad Uses of Abbreviation (Avoid Obsessive Markup)</h4>
     <p>Using <abbr>HTML</abbr> is fun and easy!</p>
-
-
+    
 </body>
 
 </html>
