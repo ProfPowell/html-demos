@@ -2,52 +2,46 @@
 <html lang="en">
 
     <head>
+        <meta charset="UTF-8" />
         <title>meter Tag Demo</title>
-        <meta charset="UTF-8"/>
     </head>
 
     <body>
         <h1>How to use html tag &lt;meter&gt;</h1>
-        <h2>Description:
-        </h2>
+
+        <h2>Description: </h2>
         <p>
             The meter tag is used to show completion status as a loading bar, it has 
                                                                                                                                                                                                                                                                                                                                                                                                                         many attributes that defines its appearence:<br>
-            <strong>min, max, low, high:
-            </strong>
+            <strong>min, max, low, high: </strong>
             are used to define range of values in the bar
-            <br>
-            <strong>value, optimum:
-            </strong>
+            <br />
+            <strong>value, optimum: </strong>
             represents the current and optimum values
-            <br>
+            <br />
             *Color of bar depending on the numeric relation between attribute values, if value falls into optimum range, it is
-            <br>
+            <br />
             shown as green, and orange if it falls close to optimum, red if far from optimum
         </p>
+
         <h2>Demo: When optimum is set between low and high</h2>
-        <label for="suboptimum">When value is less than low, shows orange:
-        </label>
+        <label for="suboptimum">When value is less than low, shows orange:</label>
         <meter id="suboptimum" min="0" max="100" low="25" high="75" optimum="50" value="10"></meter>
-        <br>
-        <label for="optimum">When value is between low and high, shows green:
-        </label>
+        <br />
+        <label for="optimum">When value is between low and high, shows green: </label>
         <meter id="optimum" min="0" max="100" low="25" high="75" optimum="50" value="50"></meter>
-        <br>
-        <label for="hyperoptimum">When value higher than high, shows orange
-        </label>
+        <br />
+        <label for="hyperoptimum">When value higher than high, shows orange</label>
         <meter id="hypteroptimum" min="0" max="100" low="25" high="75" optimum="50" value="80"></meter>
+
         <h2>Demo: When optimum is set between high and max</h2>
-        <label for="suboptimum2">When value is less than low, shows red
-        </label>
+        <label for="suboptimum2">When value is less than low, shows red</label>
         <meter id="suboptimum2" min="0" max="100" low="25" optimum="80" high="75" value="10"></meter>
-        <br>
-        <label for="optimum2">When value is between low and high, shows orange:
-        </label>
+        <br />
+        <label for="optimum2">When value is between low and high, shows orange:</label>
         <meter id="optimum2" min="0" max="100" low="25" high="75" optimum="80" value="50"></meter>
-        <br>
-        <label for="hyperoptimum2">When value higher than high, shows green:
-        </label>
+        <br />
+        <label for="hyperoptimum2">When value higher than high, shows green:</label>
         <meter id="hypteroptimum2" min="0" max="100" low="25" high="75" optimum="80" value="80"></meter>
     </body>
 
