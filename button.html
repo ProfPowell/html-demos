@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="button html demo" content="demo for the button tag">
+        <title>button tag demo</title>
+    </head>
+    <body>
+        <h1>Button Demo</h1>
+
+        <label for="button1">Customize a button: </label>
+        <button type="button" id="button1" onclick="alert('Button pressed!')">Press Me</button> <br/> <br/>
+
+        <label>Reset and submit a form</label> 
+        <form action="http://httpbin.org/post" method="post">
+            <label for="name">Enter your name:</label>
+            <input type="text" name="name" id="name"><br/>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+        <br/>
+        
+        <label for="disabled">Make a button disabled: </label>
+        <button disabled="disabled" id="disabled">Disabled</button>
+    </body>
+</html>
