@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tag: &lt;code&gt;</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <h1>&lt;code&gt;</h1>
+    <p>
+      The <code>&lt;code&gt;</code> element styles the inside content in the
+      format of coding languages for better readability.
+    </p>
+    <h2>Try it out</h2>
+    <label for="code">Write code here</label>
+    <input
+      id="code"
+      type="text"
+      oninput="(function() {
+        document.getElementById('output').innerHTML = `<code>${document.getElementById('code').value}</code>`;
+      })()"
+    />
+    <h2>Output</h2>
+    <p id="output"><code>your code</code></p>
+  </body>
+</html>

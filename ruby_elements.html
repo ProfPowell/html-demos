@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tag: &lt;ruby&gt;</title>
+    <meta charset="UTF-8" />
+    <script>
+      let chars = "平成";
+      let annotation = "Heisei";
+      window.onload = function() {
+        document.getElementById("output").innerHTML = `${chars}<rp>(</rp>
+        <rt>${annotation}</rt>
+      <rp>)</rp>`;
+      };
+
+      function handleCharacters() {
+        chars = document.getElementById("input-characters").value;
+        document.getElementById("output").innerHTML = `${chars}<rp>(</rp>
+  <rt>${annotation}</rt>
+  <rp>)</rp>`;
+      }
+      function handleAnnotation() {
+        annotation = document.getElementById("input-annotation").value;
+        document.getElementById("output").innerHTML = `${chars}<rp>(</rp>
+  <rt>${annotation}</rt>
+  <rp>)</rp>`;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>&lt;ruby&gt;, &lt;rt&gt;, and &lt;rp&gt;</h1>
+    <p>
+      This tag does the job of annotating the East Asian languages, where the
+      annotation is used for puctuation and pronunciation. It takes the form of
+      <br />
+      <code
+        >&lt;ruby&gt; lower&lt;rp&gt;(&lt;/rp&gt;
+        &lt;rt&gt;annotation&lt;/rt&gt; &lt;rp&gt;)&lt;/rp&gt;
+        &lt;/ruby&gt;</code
+      >
+      , which translates into
+      <code>
+        <ruby>
+          lower<rp>(</rp>
+          <rt>annotation</rt>
+          <rp>)</rp>
+        </ruby>
+      </code>
+    </p>
+    <h2>Try it out</h2>
+    <label for="input-characters">Characters</label>
+    <input
+      type="text"
+      id="input-characters"
+      oninput="handleCharacters()"
+      value="平成"
+    />
+    <label for="input-annotation">Annotation</label>
+    <input
+      type="text"
+      id="input-annotation"
+      oninput="handleAnnotation()"
+      value="Heisei"
+    />
+    <h2>Output:</h2>
+    <ruby id="output"
+      >平成<rp>(</rp>
+      <rt>Heisei</rt>
+      <rp>)</rp>
+    </ruby>
+  </body>
+</html>
