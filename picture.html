@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>picture: HTML Tag Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <h1>HTML picture element</h1>
+
+    <p>The picture tag acts as a container for multiple different sources for a single image.
+        It can have any number of source tags, but must have a single img tag at the very end.</p>
+
+    <p>The picture tag is used to select different source images for different contexts. Like the img tag, the picture
+        tag can implement resolution switching.</p>
+    <picture>
+        <source srcset="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=300 1x,
+                https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=700 2x">
+        <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1500" alt="Dogs">
+    </picture>
+
+    <p>However, it's best to reserve the picture tag for more complex cases that do not work with the img tag.
+    For example, in addition to resolution switching, we may want to crop an image depending on the width of the browser</p>
+    <picture>
+        <source media="(min-width: 800px)"
+                srcset="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=300 1x,
+                https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=700 2x">
+        <source srcset="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=324&h=500&fit=crop">
+        <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1500" alt="Dogs">
+    </picture>
+
+    <p>The src attribute of the img tag is used only if none of the source tags could be used or if the browser does not support the picture tag</p>
+
+</body>
+
+</html>
