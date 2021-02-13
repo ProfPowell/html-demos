@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>audio tag</title>
+</head>
+<body>
+    <p>No autoplay with controls not muted and not looped</p>
+    <audio src="https://www.computerhope.com/jargon/m/example.mp3" controls></audio>
+    <p>No autoplay, muted with controls, not looped</p>
+    <audio src="https://www.computerhope.com/jargon/m/example.mp3" muted controls></audio>
+    <p>No autoplay, not muted without controls, not looped (you won't see anything)</p>
+    <audio src="https://www.computerhope.com/jargon/m/example.mp3"></audio>
+    <p>Autoplay, not muted, without controls, looped (you won't see anything and note that autoplay of audio tracks may be blocked from browser)</p>
+    <audio src="https://www.computerhope.com/jargon/m/example.mp3" autoplay></audio>
+</body>
+</html>
